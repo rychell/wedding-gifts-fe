@@ -1,0 +1,3 @@
+{
+  "extends": "@wedding-gifts-fe/config/tsconfig.base.json"
+}

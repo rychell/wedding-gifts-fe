@@ -1,0 +1,26 @@
+{
+  "name": "wedding-gifts-fe",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "check-types": "npm run check-types --workspaces",
+    "dev:web": "npm run dev --workspace web"
+  },
+  "dependencies": {
+    "@wedding-gifts-fe/env": "*",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@wedding-gifts-fe/config": "*",
+    "typescript": "^5"
+  },
+  "packageManager": "npm@11.11.0"
+}
