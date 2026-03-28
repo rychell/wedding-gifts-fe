@@ -1,0 +1,6 @@
+- [x] Todos os botões do sistema possuem bordas com raio moderado (ex: `rounded-lg`) em vez de 100% circulares.
+- [x] A Home Page apresenta o container inferior com formato orgânico em onda.
+- [x] O texto principal da Home Page está posicionado corretamente acima do container inferior.
+- [x] O novo Header está aplicado e consistente nas páginas internas.
+- [x] A Lista de Presentes apresenta os cards refinados com paddings, bordas e sombras que refletem o mockup.
+- [x] A página de Detalhes do Presente e o Modal refletem os ajustes globais de botão e layout.

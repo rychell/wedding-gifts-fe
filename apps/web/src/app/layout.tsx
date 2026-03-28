@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 
 import "../index.css";
-import Header from "@/components/header";
 import Providers from "@/components/providers";
+import Layout from "@/components/layout";
+import { weddingConfig } from "../config/wedding-info";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +16,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const playfairDisplay = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "wedding-gifts-fe",
-  description: "wedding-gifts-fe",
+  title: weddingConfig.site.title,
+  description: weddingConfig.site.description,
 };
 
 export default function RootLayout({
@@ -26,13 +32,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`} suppressHydrationWarning>
         <Providers>
-          <div className="grid grid-rows-[auto_1fr] h-svh">
-            <Header />
+          <Layout>
             {children}
-          </div>
+          </Layout>
         </Providers>
       </body>
     </html>

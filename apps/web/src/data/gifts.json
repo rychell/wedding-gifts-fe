@@ -1,0 +1,48 @@
+[
+  {
+    "id": "jantar-romantico",
+    "title": "Jantar Romântico",
+    "description": "Um jantar inesquecível para nossa primeira semana de casados.",
+    "price": 250,
+    "image": "/images/jantar.jpg",
+    "category": "Experiências",
+    "isMostChosen": false
+  },
+  {
+    "id": "passeio-barco",
+    "title": "Passeio de Barco na Lua de Mel",
+    "description": "Contribua para um passeio maravilhoso em nossa viagem.",
+    "price": 500,
+    "image": "/images/passeio.jpg",
+    "category": "Lua de Mel",
+    "isMostChosen": true
+  },
+  {
+    "id": "cota-lua-de-mel",
+    "title": "Cota de Lua de Mel",
+    "description": "Ajude-nos a realizar a viagem dos nossos sonhos.",
+    "price": 1000,
+    "image": "/images/luademel.jpg",
+    "category": "Lua de Mel",
+    "isMostChosen": false
+  },
+  {
+    "id": "brinde-casal",
+    "title": "Um brinde ao casal",
+    "description": "Pague a nossa primeira rodada de drinks como casados!",
+    "price": 150,
+    "image": "/images/drinks.jpg",
+    "category": "Experiências",
+    "isMostChosen": false
+  },
+  {
+    "id": "nos-surpreenda",
+    "title": "Nos Surpreenda (Valor Aberto)",
+    "description": "Escolha o valor que desejar para nos presentear! Agradecemos de coração.",
+    "price": 0,
+    "image": "/images/surpresa.jpg",
+    "category": "Diversos",
+    "isOpenValue": true,
+    "isMostChosen": false
+  }
+]
